@@ -1,6 +1,4 @@
 const form = document.getElementById("formToggle");
-console.log(form);
-
 
 // Export a function we will use to toggle the form off and on
   export const toggleForm = () => {
