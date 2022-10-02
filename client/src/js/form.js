@@ -1,7 +1,9 @@
 const form = document.getElementById("formToggle");
 console.log(form);
 
-const toggleForm = () => {
+
+// Export a function we will use to toggle the form off and on
+  export const toggleForm = () => {
   if (form.style.display === "none") {
     form.style.display = "block";
   } else {
@@ -9,8 +11,8 @@ const toggleForm = () => {
   }
 }
 
-const newContactButton = document.getElementById("new-contact");
-
-newContactButton.addEventListener('click', event => {
- toggleForm()
-})
+export const clearForm = () => {
+  document.getElementById("name").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("email").value = "";
+}
